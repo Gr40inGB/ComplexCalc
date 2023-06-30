@@ -4,11 +4,43 @@
 }
 
 .workPane {
-    -fx-background-color: linear-gradient(to bottom right, #FF0050, #FF0050);
+    -fx-background-color: linear-gradient(to bottom right, green, blue );
     -fx-background-radius: 15 15 25 25;
 }
 
-.highlight {
-    -fx-background-color: #00000025;
-    -fx-background-radius: 15;
+
+.label{
+    -fx-text-fill: white;
+    -fx-font-size:24px;
 }
+
+.inputPane {
+    -fx-background-color: #00000025;
+    -fx-background-radius: 5;
+    -fx-border-color: black;
+    -fx-border-radius: 5;
+    -fx-background-position-x: right;
+    -fx-text-align: right;
+     -fx-text-fill: white;
+     -fx-font-size:24px;
+}
+
+.showPane {
+    -fx-background-color: #0000002;
+    -fx-background-radius: 5;
+    -fx-border-color: black;
+    -fx-border-radius: 5;
+}
+
+.button{
+       -fx-background-radius: 10;
+       -fx-background-color: linear-gradient(to bottom right, blue, green );
+        -fx-text-fill: white;
+
+        -fx-border-color: black;
+        -fx-border-radius: 10;
+        -fx-font-size:22px;
+        -fx-padding: 3 6 6 6;
+}
+
+

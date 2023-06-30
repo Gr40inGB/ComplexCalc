@@ -1,5 +1,6 @@
 package view;
 
+import controller.ComplexCalcFullController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -19,6 +20,8 @@ public class CalculatorApp extends Application {
         scene.setFill(Color.TRANSPARENT);
         stage.initStyle(StageStyle.TRANSPARENT);
         stage.setResizable(false);
+        ((ComplexCalcFullController)fxmlLoader.getController()).init(stage);
+
         stage.show();
     }
 
