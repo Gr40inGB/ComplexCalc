@@ -8,6 +8,8 @@ import javafx.scene.layout.Pane;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import model.Calculator;
+import model.CalculatorFunctions;
+import service.ExpressionLogic;
 
 import javax.swing.text.html.ImageView;
 import java.net.URL;
@@ -15,7 +17,8 @@ import java.util.ResourceBundle;
 
 public class ComplexCalcFullController {
 
-    Calculator calculator = new Calculator();
+    ExpressionLogic mathLogic = new ExpressionLogic();
+
 
 
     @FXML
@@ -27,7 +30,7 @@ public class ComplexCalcFullController {
 
     @FXML
     void getResult(ActionEvent event) {
-
+        expression.setText(mathLogic.getResult(expression.getText()));
     }
 
 
@@ -43,6 +46,8 @@ public class ComplexCalcFullController {
             stage.setX(mouseEvent.getScreenX() - x);
             stage.setY(mouseEvent.getScreenY() - y);
         });
+
+
 
 
 //

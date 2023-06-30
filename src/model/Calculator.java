@@ -63,5 +63,15 @@ public class Calculator implements CalculatorFunctions {
     public String getResult() {
         return this.result;
     }
+
+    @Override
+    public String getResult(Double left, Double leftImaginary, String operation, Double right, Double rightImaginary) {
+        setLeftReal(left);
+        setLeftImaginary(leftImaginary);
+        setOperation(operation);
+        setRightReal(right);
+        setRightImaginary(rightImaginary);
+        return getResult();
+    }
 }
 

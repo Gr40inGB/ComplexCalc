@@ -14,4 +14,7 @@ public interface CalculatorFunctions {
     public boolean calculateResultOk();
 
     public String getResult();
+
+    public String getResult(Double left, Double leftImaginary, String operation, Double right, Double rightImaginary);
+
 }
